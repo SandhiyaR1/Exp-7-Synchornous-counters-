@@ -46,35 +46,81 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 4-bit Count Down Counter
 ### Procedure
-/* write all the steps invloved */
+STEP 1 Create a new project in Quartus|| Software.
+
+STEP 2 Name the project as upc and downc for up and down counter.
+
+STEP 3 Create a new verilog hdl file in the project file.
+
+STEP 4 Within that file write the program for up and down counter
+
+STEP 5 After that run the program and give the clock pulse value as 50 in timing diagram and run the program.
+
 
 
 
 ### PROGRAM 
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+
+Developed by: Sandhiya R
+
+RegisterNumber:  212222230129
 */
-
-
+### UPCOUNTER
+```
+    module upc(clk,A);
+    input clk;
+    output reg[0:3]A;
+    always@(posedge clk)
+    begin
+      	A[0]=((((A[1])&(A[2]))&A[3])^A[0]);
+      	A[1]=(((A[2])&(A[3]))^A[1]);
+      	A[2]=((A[3])^A[2]);
+      	A[3]=1^A[3];
+    end
+    endmodule
+````
+### DOWNCOUNTER
+```
+  module downc(clk,A);
+  input clk;
+  output reg[0:3]A;
+  always@(posedge clk)
+  begin
+ 	A[0]=((((~A[1])&(~A[2]))&A[3])^A[0]);
+ 	A[1]=(((A[2])&(A[3]))^A[1]);
+ 	A[2]=((A[3])^A[2]);
+ 	A[3]=1^A[3];
+  end
+  endmodule
+  ```
 
 
 
 
 ### RTL LOGIC UP COUNTER AND DOWN COUNTER  
+### UPCOUNTER
+
+![ex6](https://github.com/SandhiyaR1/Exp-7-Synchornous-counters-/assets/113497571/a359e7cc-79d8-46ac-beb1-558529264980)
 
 
 
 
 
+### DOWNCOUNTER
+![Uploading ex006.png…]()
+
+![Uploading 243199180-a4884e8b-b160-4da9-a64d-f7209f342749.png…]()
 
 
 
 
 ### TIMING DIGRAMS FOR COUNTER  
 
+![Uploading 243199195-fa80f6a1-1c65-4835-8c0e-3fb8ea115c4e.png…]()
 
+![Uploading 243240006-d3555458-a95f-43f6-a369-bdd6ad284220.png…]()
 
 
 
@@ -86,3 +132,4 @@ RegisterNumber:
 
 
 ### RESULTS 
+Thus Synchornous counters up counter and down counter circuit are studied and the truth table for different logic gates are verified.
