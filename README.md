@@ -1,7 +1,10 @@
 # Exp-6-Synchornous-counters - up counter and down counter 
-### AIM: To implement 4 bit up and down counters and validate  functionality.
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
+### AIM:
+To implement 4 bit up and down counters and validate  functionality.
+### HARDWARE REQUIRED:  – 
+PC, Cyclone II , USB flasher
+### SOFTWARE REQUIRED:
+Quartus prime
 ### THEORY 
 
 ## UP COUNTER 
@@ -60,13 +63,12 @@ STEP 5 After that run the program and give the clock pulse value as 50 in timing
 
 
 ### PROGRAM 
-/*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-
+```
 Developed by: Sandhiya R
 
 RegisterNumber:  212222230129
-*/
+```
 ### UPCOUNTER
 ```
     module upc(clk,A);
@@ -109,24 +111,30 @@ RegisterNumber:  212222230129
 
 
 ### DOWNCOUNTER
-![Uploading ex006.png…]()
 
-![Uploading 243199180-a4884e8b-b160-4da9-a64d-f7209f342749.png…]()
 
+![243199180-a4884e8b-b160-4da9-a64d-f7209f342749](https://github.com/SandhiyaR1/Exp-7-Synchornous-counters-/assets/113497571/878bd734-62af-4e2f-93ab-450afc78e1f5)
 
 
 
 ### TIMING DIGRAMS FOR COUNTER  
 
-![Uploading 243199195-fa80f6a1-1c65-4835-8c0e-3fb8ea115c4e.png…]()
+### UPCOUNTER
+![243199195-fa80f6a1-1c65-4835-8c0e-3fb8ea115c4e](https://github.com/SandhiyaR1/Exp-7-Synchornous-counters-/assets/113497571/9ed4a7da-1211-4a38-ad07-b881dcf6d792)
 
-![Uploading 243240006-d3555458-a95f-43f6-a369-bdd6ad284220.png…]()
+### DOWNCOUNTER
+ ![243240006-d3555458-a95f-43f6-a369-bdd6ad284220](https://github.com/SandhiyaR1/Exp-7-Synchornous-counters-/assets/113497571/67ca23da-3e5e-4792-84bd-0e5696ac597a)
 
 
 
 ### TRUTH TABLE 
 
+### UPCOUNTER
+![243240019-76fd493d-ed00-400b-8ef5-63f1412f23bb](https://github.com/SandhiyaR1/Exp-7-Synchornous-counters-/assets/113497571/ea48c087-6489-40b4-b575-43ae97690443)
 
+### DOWNCOUNTER
+
+![243240064-2ed9e6b1-2436-4393-bd90-ffe7da8cd393](https://github.com/SandhiyaR1/Exp-7-Synchornous-counters-/assets/113497571/727d20eb-5bf5-44a6-acbe-3ee738814a50)
 
 
 
